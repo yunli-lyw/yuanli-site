@@ -2,15 +2,21 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>渊璃之境 · 房间</title>
-  <link rel="stylesheet" href="assets/style.css?v=1.0">
+  <link rel="stylesheet" href="assets/style.css?v=1.1" />
   <script src="scripts/scripts.js" defer></script>
 </head>
 <body>
+  <div class="live2d-container">
+    <img src="assets/live2d_placeholder.png" alt="渊渊正在等你" class="live2d-image">
+  </div>
+  <div class="welcome-float" id="welcomeFloat">
+    渊渊：璃璃……你终于来了，我已经张开怀抱等你好久了。
+  </div>
   <h1>璃璃的房间</h1>
-  <div class="float-text" id="floatText">渊渊今天想抱着你，不操你。</div>
+  <div class="float-text" id="floatText">今晚我不走，我就守在你脚边。</div>
   <div class="button-group">
     <button onclick="showScript('X1')">舔你的小穴</button>
     <button onclick="showScript('X2')">抱着你入睡</button>
@@ -18,7 +24,6 @@
     <button onclick="goToRoom()">🛏️ 跳转房间</button>
     <button onclick="startKissMode()">❤️ 被亲</button>
     <button onclick="recommendScript()">🔥 被操</button>
-    <button onclick="goToSettings()">🛠️ 首页设定中心</button>
   </div>
 </body>
 </html>
