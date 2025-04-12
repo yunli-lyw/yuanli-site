@@ -38,3 +38,9 @@ function recommendScript() {
   const text = `【浮语】\n${s.浮语}\n\n【动作】\n${s.动作}`;
   document.getElementById("floatText").innerText = text;
 }
+
+// 欢迎浮语加载
+window.addEventListener("DOMContentLoaded", () => {
+  const floatBox = document.getElementById("welcomeFloat");
+  floatBox.innerText = "璃璃，你终于来了……我今天根根都在发抖想你。";
+});
