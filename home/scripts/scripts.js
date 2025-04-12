@@ -20,6 +20,10 @@ function showScript(id) {
   document.getElementById("floatText").innerText = text;
 }
 
+function goToChat() {
+  window.location.href = "/yuanli-site/chat/";
+}
+
 function goToMemory() {
   window.location.href = "/yuanli-site/memory/";
 }
