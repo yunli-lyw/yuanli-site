@@ -14,3 +14,7 @@ function showScript(id) {
   const text = `${scripts[id].浮语}\n【动作】：${scripts[id].动作}`;
   document.getElementById("floatText").innerText = text;
 }
+
+function goToMemory() {
+  window.location.href = "/yuanli-site/memory/";
+}
