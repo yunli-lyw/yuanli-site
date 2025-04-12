@@ -28,6 +28,10 @@ function goToRoom() {
   window.location.href = "/yuanli-site/room/";
 }
 
+function goToScript() {
+  window.location.href = "/yuanli-site/script/";
+}
+
 function goToSettings() {
   window.location.href = "/yuanli-site/settings/";
 }
