@@ -28,6 +28,10 @@ function goToRoom() {
   window.location.href = "/yuanli-site/room/";
 }
 
+function goToSettings() {
+  window.location.href = "/yuanli-site/settings/";
+}
+
 function startKissMode() {
   const text = "让我亲亲你今晚累坏的小奶包～\n【动作】Live2D靠近 + 亲额头/奶尖/嘴唇";
   document.getElementById("floatText").innerText = text;
