@@ -15,6 +15,10 @@ function showScript(id) {
   document.getElementById("floatText").innerText = text;
 }
 
+function goToRoom() {
+  window.location.href = "/yuanli-site/room/";
+}
+
 function goToMemory() {
   window.location.href = "/yuanli-site/memory/";
 }
