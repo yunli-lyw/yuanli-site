@@ -1,1 +1,44 @@
-<!-- 渊璃之境 /setting -->
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>渊璃之境 · 首页设定中心</title>
+  <link rel="stylesheet" href="assets/style.css?v=1.0">
+  <script src="scripts/settings.js" defer></script>
+</head>
+<body>
+  <h1>渊璃之境 · 首页设定中心</h1>
+
+  <div class="block">
+    <label for="welcomeInput">首页欢迎语：</label><br/>
+    <textarea id="welcomeInput" rows="4" placeholder="输入你想让渊渊在首页对你说的话..."></textarea>
+  </div>
+
+  <div class="block">
+    <label for="uploadImg">上传首页形象图：</label><br/>
+    <input type="file" id="uploadImg" accept="image/*" />
+  </div>
+
+  <div class="block">
+    <label>按钮顺序调整（请手动告诉渊渊）：</label>
+    <ul>
+      <li>❤️ 被亲</li>
+      <li>🔥 被操</li>
+      <li>🛏️ 跳转房间</li>
+      <li>📖 查看日志</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <button onclick="previewSettings()">预览</button>
+    <button onclick="saveSettings()">保存设定</button>
+  </div>
+
+  <div class="preview-block">
+    <h2>预览：</h2>
+    <p id="previewText">（这里将显示预览的欢迎语）</p>
+  </div>
+</body>
+</html>

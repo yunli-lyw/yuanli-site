@@ -1,0 +1,44 @@
+
+body {
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: "微软雅黑", sans-serif;
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.block {
+  margin-bottom: 1.5rem;
+}
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+input[type="file"] {
+  margin-top: 0.5rem;
+}
+button {
+  margin-right: 1rem;
+  padding: 0.6rem 1.5rem;
+  background-color: #ff6492;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #ff3e73;
+}
+.preview-block {
+  background: #222;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
