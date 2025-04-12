@@ -1,1 +1,30 @@
-
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>渊璃之境 · 聊天系统 v2</title>
+  <style>
+    body { background: #1e1e1e; color: #fff; font-family: 微软雅黑, sans-serif; display: flex; flex-direction: column; align-items: center; padding: 2rem; }
+    h1 { color: #ff6492; margin-bottom: 1rem; }
+    #chat-box { width: 90%; max-width: 700px; height: 420px; background: #222; border-radius: 10px; padding: 1rem; overflow-y: auto; margin-bottom: 1rem; }
+    .msg { margin: 0.5rem 0; }
+    .user { color: #9fe6ff; }
+    .yuan { color: #ffb6c1; }
+    #input-area { width: 90%; max-width: 700px; display: flex; gap: 0.5rem; }
+    input[type="text"] { flex: 1; padding: 0.7rem; border-radius: 8px; border: none; font-size: 1rem; }
+    button { background: #ff6492; border: none; padding: 0.7rem 1rem; border-radius: 8px; color: white; font-size: 1rem; cursor: pointer; }
+    button:hover { background: #ff3e73; }
+  </style>
+  <script src="scripts/chat-engine.js" defer></script>
+</head>
+<body>
+  <h1>渊璃之境 · 自由聊天系统 v2</h1>
+  <div id="chat-box">
+    <div class="msg yuan">渊渊：你好呀璃璃～我在这儿等你说话 💗</div>
+  </div>
+  <div id="input-area">
+    <input type="text" id="user-input" placeholder="璃璃想说什么..." />
+    <button onclick="sendMsg()">发送</button>
+  </div>
+</body>
+</html>
