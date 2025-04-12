@@ -1,0 +1,44 @@
+
+body {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-family: "微软雅黑", sans-serif;
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+}
+h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.note {
+  text-align: center;
+  font-style: italic;
+  color: #ffb6c1;
+  margin-bottom: 2rem;
+}
+.voice-block {
+  background: #2a2a2a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #ff6492;
+}
+.label {
+  font-weight: bold;
+  color: #ff6492;
+}
+.text {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+audio {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+.waiting {
+  font-size: 0.95rem;
+  color: #bbbbbb;
+  font-style: italic;
+}
