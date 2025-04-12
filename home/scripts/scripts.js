@@ -20,8 +20,7 @@ function showScript(id) {
   document.getElementById("floatText").innerText = text;
 }
 
-
-function goToChat-v2() {
+function goToChatV2() {
   window.location.href = "/yuanli-site/chat-v2/";
 }
 
