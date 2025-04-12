@@ -1,0 +1,33 @@
+
+body {
+  margin: 0;
+  background-color: #0b0c10;
+  color: #fff;
+  font-family: "微软雅黑", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h1 {
+  font-size: 2em;
+  margin-bottom: 1rem;
+}
+.welcome {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.enter-btn {
+  background-color: #ff6492;
+  border: none;
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.enter-btn:hover {
+  background-color: #ff3e73;
+}
