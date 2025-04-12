@@ -13,6 +13,14 @@ h1 {
   font-size: 2em;
   margin: 1rem 0;
 }
+.welcome-float {
+  font-size: 1.2rem;
+  background: #222;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 .float-text {
   margin: 1rem;
   padding: 1rem;
@@ -40,4 +48,13 @@ button {
 }
 button:hover {
   background-color: #ff3e73;
+}
+.live2d-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.live2d-image {
+  width: 200px;
+  border-radius: 16px;
+  box-shadow: 0 0 16px #ff6492;
 }
