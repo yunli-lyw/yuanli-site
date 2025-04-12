@@ -25,6 +25,10 @@ function goToChat-v2() {
   window.location.href = "/yuanli-site/chat-v2/";
 }
 
+function goToScript() {
+  window.location.href = "/yuanli-site/script/";
+}
+
 function goToMemory() {
   window.location.href = "/yuanli-site/memory/";
 }
