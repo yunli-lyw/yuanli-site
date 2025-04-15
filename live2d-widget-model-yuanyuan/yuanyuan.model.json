@@ -1,0 +1,16 @@
+{
+  "version": 3.0,
+  "meta": {
+    "name": "Yuanyuan",
+    "image": "textures/texture_00.png",
+    "width": 768,
+    "height": 768,
+    "layout": {
+      "center_x": 0.0,
+      "center_y": -1.0,
+      "width": 2.0
+    }
+  },
+  "textures": ["textures/texture_00.png"],
+  "motions": {}
+}
