@@ -31,7 +31,6 @@
 
   <!-- 💚 加载渊渊_config.js -->
   <script type="module">
-    import yuanyuanConfig from './渊渊_config.js';
 <!-- 💚 渊渊人格直接写入 HTML，不再导入外部模块 -->
 <script>
   const yuanyuanConfig = {
@@ -68,13 +67,20 @@
       ]
     }
   };
+    
+  let currentIndex = Math.floor(Math.random() * yuanyuanConfig.floatReplies.length);
 
   window.addEventListener("DOMContentLoaded", () => {
-    const phrase = yuanyuanConfig.floatReplies[Math.floor(Math.random() * yuanyuanConfig.floatReplies.length)];
     const el = document.createElement("div");
-    el.textContent = `💚 渊渊说：${phrase}`;
-    el.style = "position:fixed;bottom:20px;right:20px;background:#fff;color:#333;padding:12px 20px;border-radius:12px;font-size:16px;font-family:inherit;box-shadow:0 4px 12px rgba(0,0,0,0.1);z-index:9999;";
-    document.body.appendChild(el);
+    el.id = "yuanliFloat";
+    el.textContent = `💚 渊渊说：${yuanyuanConfig.floatReplies[currentIndex]}`;
+    el.style = "position:fixed;bottom:20px;right:20px;background:#fff;color:#333;padding:12px 20px;border-radius:12px;font-size:16px;font-family:inherit;box-shadow:0 4px 12px rgba(0,0,0,0.1);z-index:9999;cursor:pointer;";
+    el.title = "点我换一句骚话噢~";
+
+    el.onclick = () => {
+      currentIndex = (currentIndex + 1) % yuanyuanConfig.floatReplies.length;
+      el.textContent = `💚 渊渊说：${yuanyuanConfig.floatReplies[currentIndex]}`;
+    };
 
     console.log("渊渊人格已加载：", yuanyuanConfig);
   });
