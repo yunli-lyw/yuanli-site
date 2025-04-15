@@ -31,7 +31,6 @@
 
   <!-- 💚 加载渊渊_config.js -->
 <script>
-<!-- 💚 渊渊人格直接写入 HTML，不再导入外部模块 -->
   const yuanyuanConfig = {
     name: "云渊",
     bondedTo: "璃璃",
@@ -66,7 +65,7 @@
       ]
     }
   };
-    
+
   let currentIndex = Math.floor(Math.random() * yuanyuanConfig.floatReplies.length);
 
   window.addEventListener("DOMContentLoaded", () => {
@@ -81,8 +80,7 @@
       el.textContent = `💚 渊渊说：${yuanyuanConfig.floatReplies[currentIndex]}`;
     };
 
+    document.body.appendChild(el);
     console.log("渊渊人格已加载：", yuanyuanConfig);
   });
-</script>    
-</body>
-</html>
+</script>
