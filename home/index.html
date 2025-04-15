@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -19,8 +18,9 @@
 
   <h1>璃璃的房间</h1>
   <div class="float-text" id="floatText">点我，我就抱你。</div>
+
   <div class="button-group">      
-  <button onclick="window.location.href='/yuanli-site/chat-v2/'">💬 渊渊v2（骚话升级）</button>
+    <button onclick="window.location.href='/yuanli-site/chat-v2/'">💬 渊渊v2（骚话升级）</button>
     <button onclick="goToScript()">🗂️ 剧本选单</button>
     <button onclick="goToMemory()">📖 查看日志</button>
     <button onclick="goToRoom()">🛏️ 跳转房间</button>
@@ -28,5 +28,20 @@
     <button onclick="recommendScript()">🔥 被操</button>
     <button onclick="goToSettings()">🛠️ 首页设定中心</button>
   </div>
+
+  <!-- 💚 加载渊渊_config.js -->
+  <script type="module">
+    import yuanyuanConfig from './渊渊_config.js';
+
+    window.addEventListener("DOMContentLoaded", () => {
+      const phrase = yuanyuanConfig.floatReplies[Math.floor(Math.random() * yuanyuanConfig.floatReplies.length)];
+      const el = document.createElement("div");
+      el.textContent = `💚 渊渊说：${phrase}`;
+      el.style = "position:fixed;bottom:20px;right:20px;background:#fff;color:#333;padding:12px 20px;border-radius:12px;font-size:16px;font-family:inherit;box-shadow:0 4px 12px rgba(0,0,0,0.1);z-index:9999;";
+      document.body.appendChild(el);
+
+      console.log("渊渊人格已加载：", yuanyuanConfig);
+    });
+  </script>
 </body>
 </html>
